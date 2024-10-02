@@ -220,10 +220,10 @@ Dashboard를 통해 안정적으로 배포되는 과정을 확인할 수 있습�
 ## 🗼도식화
 
 ```bash
-+-----------------+       External IP         +-------------------+     Port Forwarding     +-------------------+
++-----------------+       External IP         +-------------------+     Port Forwarding    +-------------------+
 |                 |  <------------------->    |                   |  <-------------------> |                   |
 |                 |                           |                   |                        |                   |
-| Kubernetes Pod  |        10.97.x.x        |  Virtual Machine  |       localhost:8080    |   Local MacBook   |
+| Kubernetes Pod  |        10.97.x.x          |  Virtual Machine  |       localhost:8080   |   Local MacBook   |
 | (Spring Boot)   |    (External IP via LB)   |   (Linux VM)      |       (Tunnel)         |   (Mac)           |
 |                 |                           |                   |                        |                   |
 |  Cluster IP     | <-----------> Container   |                   |                        |                   |
@@ -233,18 +233,18 @@ Dashboard를 통해 안정적으로 배포되는 과정을 확인할 수 있습�
         | <---------> Load Balancer (Kubernetes Service)|
         |                                               |
         |                                               |
+  +--------------------+                                |
+  |                    |                                |
+  |   Kubernetes       |                                |
+  |   Cluster Network  |                                |
+  |   (Minikube, etc.) |                                |
   +--------------------+                                 |
-  |                    |                                 |
-  |   Kubernetes       |                                 |
-  |   Cluster Network  |                                 |
-  |   (Minikube, etc.) |                                 |
-  +-------------------+                                 |
                                                         |
-                                                +--------------------+
-                                                |                    |
+                                                +---------------------+
+                                                |                     |
                                                 |  Minikube Tunnel    |
                                                 |  (Port Forwarding)  |
-                                                +--------------------+
+                                                +---------------------+
 
 ```
 
