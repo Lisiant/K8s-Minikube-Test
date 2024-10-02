@@ -6,6 +6,10 @@
 
 로컬 환경에서 개발한 Spring Boot 앱을 가상 환경(Ubuntu Linux)에서 Docker를 통해 실행하고, 이를 Kubernetes로 배포하여 애플리케이션의 확장성과 가용성을 극대화하는 것이 목표입니다. 또한, **멀티 아키텍처 Docker 이미지**를 빌드하고, **Minikube**를 사용해 외부에서 접근할 수 있도록 설정하는 과정을 다룹니다.
 
+## 🖼️ 도식화
+
+![image](https://github.com/user-attachments/assets/1be87806-3118-4e38-ab6d-cce2f0483bfc)
+
 ## 🔧 과정
 
 ## 1️⃣ Spring Boot 프로젝트 Ubuntu에서 Docker로 실행
