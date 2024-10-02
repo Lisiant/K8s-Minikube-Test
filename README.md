@@ -1,4 +1,4 @@
-# ⚙️ Kubernetes와 Minikube를 활용한 Spring Boot 애플리케이션 배포 및 관리
+# ⚙️ Kubernetes를 활용한 Spring Boot 애플리케이션 배포 및 관리
 
 ## 📜 개요
 
